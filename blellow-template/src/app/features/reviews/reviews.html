@@ -1,0 +1,46 @@
+<section class="reviews" id="reviews">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <span class="subtitle">
+        {{ review.subtitle }}
+      </span>
+
+      <h2>
+        {{ review.title }}
+      </h2>
+
+    </div>
+
+    <div class="review-grid">
+
+      <div
+        class="review-card"
+        *ngFor="let review of review.reviews">
+
+        <div class="stars">
+
+          <i
+            class="fas fa-star"
+            *ngFor="let star of [].constructor(review.rating)">
+          </i>
+
+        </div>
+
+        <p class="review-text">
+          "{{ review.review }}"
+        </p>
+
+        <h4>
+          – {{ review.author }}
+        </h4>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,56 @@
+<section class="accommodation">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <span class="subtitle">
+        {{ accommodation.subtitle }}
+      </span>
+
+      <h2>
+        {{ accommodation.title }}
+      </h2>
+
+      <p>
+        {{ accommodation.description }}
+      </p>
+
+    </div>
+
+
+    <div class="accommodation-grid">
+
+      <div
+        class="card"
+        *ngFor="let card of accommodation.cards"
+      >
+
+        <img
+          [src]="card.imgUrl"
+          [alt]="card.title"
+        >
+
+        <div class="card-content">
+
+          <h3>
+            {{ card.title }}
+          </h3>
+
+          <p>
+            {{ card.description }}
+          </p>
+
+           <a href="#accommodation" class="primary-btn" >
+                {{ accommodation.accommodationButton  }}
+            </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

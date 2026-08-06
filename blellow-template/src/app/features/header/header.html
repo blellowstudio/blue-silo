@@ -1,0 +1,46 @@
+<header
+  class="header"
+  [class.scrolled]="isScrolled">
+
+  <div class="container">
+
+<a class="logo" href="/">
+  <span class="logo-first">{{ header.companyFirstName }}</span><span class="logo-second">{{ header.companySecondName }}</span>
+</a>
+
+    <nav class="navigation">
+
+      @for(item of navigation; track item.title){
+
+      <a [href]="item.url">
+
+        {{ item.title }}
+
+      </a>
+
+      }
+
+    </nav>
+    <div class="actions">
+
+      <div class="socials">
+
+        <a [href]="header.social.facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a [href]="header.social.instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+      </div>
+
+      <button class="book-btn">
+       {{ header.headerBtn }}
+      </button>
+
+    </div>
+
+  </div>
+
+</header>

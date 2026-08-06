@@ -1,0 +1,26 @@
+<section class="gallery">
+
+  <div class="container">
+
+    <div class="section-header">
+      <span class="subtitle">{{ gallery.subtitle }}</span>
+      <h2>{{ gallery.title }}</h2>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div
+        class="gallery-item"
+        *ngFor="let image of gallery.images">
+
+        <img
+          [src]="image.imgUrl"
+          [alt]="image.alt">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
