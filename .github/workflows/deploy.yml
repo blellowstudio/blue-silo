@@ -1,5 +1,9 @@
 name: Build and Deploy Angular to GitHub Pages
 
+defaults:
+  run:
+    working-directory: blellow-template
+
 on:
   push:
     branches:
