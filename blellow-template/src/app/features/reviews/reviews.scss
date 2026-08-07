@@ -1,6 +1,6 @@
 .reviews {
   padding: 120px 0;
-  background: #faf8f3;
+  background: var(--white);
 }
 
 .review-grid {
@@ -76,4 +76,45 @@
 .section-header p {
   color: var(--text);
   line-height: 1.8;
+}
+
+@media(max-width:1200px) {
+  .reviews {
+    padding: 100px 0;
+  }
+
+  .review-grid {
+    gap: 28px;
+  }
+}
+
+@media(max-width:992px) {
+  .reviews {
+    padding: 90px 24px;
+  }
+
+  .review-grid {
+    gap: 24px;
+  }
+
+  .review-card {
+    max-width: 700px;
+    margin: 0 ;
+  }
+}
+
+@media(max-width:768px) {
+  .reviews {
+    padding: 80px 20px;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .review-card {
+    max-width: 100%;
+    padding: 24px;
+  }
 }

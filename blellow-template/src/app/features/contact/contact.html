@@ -1,4 +1,4 @@
-<section class="contact" >
+<section class="contact" id="contact" >
 
   <div class="container">
 
@@ -24,38 +24,40 @@
 
         <h3>{{ contact.cardTitle }}</h3>
 
-        <div class="info">
+        <div class="contact-card-body">
 
-          <h4>
-            <i class="fas fa-map-marker-alt"></i>
-            Address
-          </h4>
+          <div class="contact-card-column">
+            <div class="info">
+              <h4>
+                <i class="fas fa-map-marker-alt"></i>
+                Address
+              </h4>
 
-          @for(line of contact.address; track line){
-          <p>{{ line }}</p>
-          }
+              @for(line of contact.address; track line){
+              <p>{{ line }}</p>
+              }
+            </div>
+          </div>
 
-        </div>
+          <div class="contact-card-column">
+            <div class="info">
+              <h4>
+                <i class="fas fa-phone"></i>
+                Phone
+              </h4>
 
-        <div class="info">
+              <p>{{ contact.phone }}</p>
+            </div>
 
-          <h4>
-            <i class="fas fa-phone"></i>
-            Phone
-          </h4>
+            <div class="info">
+              <h4>
+                <i class="fas fa-envelope"></i>
+                Email
+              </h4>
 
-          <p>{{ contact.phone }}</p>
-
-        </div>
-
-        <div class="info">
-
-          <h4>
-            <i class="fas fa-envelope"></i>
-            Email
-          </h4>
-
-          <p>{{ contact.email }}</p>
+              <p>{{ contact.email }}</p>
+            </div>
+          </div>
 
         </div>
 

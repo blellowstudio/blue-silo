@@ -1,30 +1,29 @@
 .accommodation {
-  padding: 100px 0;
+  padding: 120px 0;
   background: var(--light-grey);
 }
 
 
 .section-header {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto 60px;
-
+  margin-bottom: 70px;
 
   .subtitle {
     color: var(--secondary);
-    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 4px;
-    font-weight: 700;
+    text-transform: uppercase;
   }
-
 
   h2 {
-    font-size: 48px;
     color: var(--primary);
+    font-size: 54px;
+    margin: 18px 0;
   }
 
-
   p {
+    max-width: 650px;
+    margin: auto;
     font-size: 18px;
   }
 }
@@ -134,9 +133,40 @@
 @media(max-width:1200px){
 
   .accommodation-grid{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
   }
 
+  .accommodation {
+    padding: 100px 0;
+  }
+}
+
+@media(max-width:992px) {
+  .accommodation {
+    padding: 90px 24px;
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+  }
+
+  .accommodation-grid {
+    gap: 24px;
+  }
+
+  .card {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .card-content {
+    padding: 26px;
+  }
+
+  .card img {
+    height: 240px;
+  }
 }
 
 
@@ -146,4 +176,24 @@
     grid-template-columns:1fr;
   }
 
+  .accommodation {
+    padding: 80px 20px;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .card-content {
+    padding: 24px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .section-header h2 {
+    font-size: 2.4rem;
+  }
 }

@@ -1,6 +1,8 @@
 #about {
-  background: white;
+   padding: 120px 0 0 0;
+  background: var(--white);
 }
+
 
 .about-container {
 
@@ -95,5 +97,71 @@
 .primary-btn:hover {
 
   transform: translateY(-4px);
+
+}
+
+@media (max-width: 992px) {
+
+  .about-container {
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    padding: 80px 6%;
+
+  }
+
+  .about-content h2 {
+
+    font-size: 2.6rem;
+
+  }
+
+  .about-content p {
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .about {
+
+    padding-top: 80px;
+
+  }
+
+  .about-container {
+
+    padding: 70px 5%;
+
+    gap: 32px;
+
+  }
+
+  .about-content h2 {
+
+    font-size: 2.3rem;
+
+  }
+
+  .about-content p {
+
+    font-size: 0.98rem;
+
+  }
+
+  .primary-btn {
+
+    width: 100%;
+
+    padding: 16px 0;
+
+  }
 
 }

@@ -2,7 +2,7 @@ export const NavigationConfig = [
 
   {
     title: 'Home',
-    url: '#'
+    url: '#home'
   },
 
   {
