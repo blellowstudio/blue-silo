@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Angular
         run: |
-          npm run build -- --configuration production --base-href "/blue-silo/"
+          npm run build -- --configuration production --base-href "/blellow-template/"
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v4
