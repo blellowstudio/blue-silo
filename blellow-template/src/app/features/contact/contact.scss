@@ -56,12 +56,11 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .contact-card h3 {
   font-size: 36px;
-  margin-bottom: 24px;
+  margin: 10px 0 0 0;
 }
 
 .contact-card-body {
@@ -69,12 +68,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   flex: 1;
+  align-items: center;
+
 }
 
 .contact-card-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
 }
 
 .info {
@@ -112,7 +114,6 @@
   font-weight: 600;
   transition: .35s;
   text-decoration: none;
-  margin-top: 20px;
 }
 
 .primary-btn:hover {
@@ -187,6 +188,10 @@
 
   .contact-card h3 {
     font-size: 32px;
+  }
+
+  .primary-btn {
+    margin-top: 18px;
   }
 
   .map {

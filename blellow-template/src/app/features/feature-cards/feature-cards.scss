@@ -130,7 +130,7 @@
 
 }
 
-@media(max-width:1200px){
+@media(max-width:1192px){
 
   .accommodation-grid{
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -138,11 +138,11 @@
   }
 
   .accommodation {
-    padding: 100px 0;
+    padding: 100px 24px;;
   }
 }
 
-@media(max-width:992px) {
+@media(max-width:1002px) {
   .accommodation {
     padding: 90px 24px;
   }
