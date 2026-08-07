@@ -12,9 +12,8 @@
 
     </h1>
 
-    <p>
-      {{ hero.description }}
-
+    <p *ngFor="let paragraph of hero.description">
+      {{ paragraph }}
     </p>
 
     <div class="hero-buttons">

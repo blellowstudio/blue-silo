@@ -46,7 +46,9 @@
                 Phone
               </h4>
 
-              <p>{{ contact.phone }}</p>
+              @for(phone of contact.phones; track phone){
+              <p><strong>{{ phone.label }}:</strong> {{ phone.number }}</p>
+              }
             </div>
 
             <div class="info">

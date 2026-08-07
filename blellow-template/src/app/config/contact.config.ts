@@ -16,7 +16,16 @@ export const ContactConfig = {
     'South Africa',
   ],
 
-  phone: '+27 84 675 1348',
+  phones: [
+    {
+      label: 'Anton',
+      number: '+27 84 675 1348'
+    },
+    {
+      label: 'Tracy',
+      number: '+27 74 942 8190'
+    }
+  ],
 
   email: 'afbothape@gmail.com',
 

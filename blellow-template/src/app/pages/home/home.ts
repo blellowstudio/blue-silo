@@ -8,6 +8,7 @@ import { Activities } from '../../features/activities/activities';
 import { Gallery }from '../../features/gallery/gallery'
 import { Reviews } from '../../features/reviews/reviews';
 import { Contact } from '../../features/contact/contact';
+import { Booking } from '../../features/booking/booking';
 import { Footer } from '../../core/layout/footer/footer';
 
 @Component({
@@ -22,6 +23,7 @@ import { Footer } from '../../core/layout/footer/footer';
     Gallery,
     Reviews,
     Contact,
+    Booking,
     Footer
   ],
   templateUrl: './home.html',

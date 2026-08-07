@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivitiesConfig } from '../../config/site.config';
+import { ActivitiesConfig } from '../../config/activities.config';
 
 @Component({
   selector: 'app-activities',

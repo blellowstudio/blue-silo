@@ -52,7 +52,8 @@
   border-radius: var(--radius);
   padding: 28px;
   box-shadow: var(--shadow);
-  height: 50vh;
+  min-height: 50vh;
+  height: 60vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -126,12 +127,14 @@
   overflow: hidden;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  height: 50vh;
+  min-height: 50vh;
+  height: 60vh;
 }
 
 .map iframe {
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
+  height: 60vh;
 }
 
 /* Tablet */

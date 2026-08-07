@@ -18,9 +18,11 @@
                 {{ about.title }}
             </h2>
 
-            <p>
-              {{ about.description }}
-            </p>
+            <div class="about-description">
+              <p *ngFor="let paragraph of about.description">
+                {{ paragraph }}
+              </p>
+            </div>
 
             <a href="#accommodation" class="primary-btn" >
                 {{ about.secondaryButton }}

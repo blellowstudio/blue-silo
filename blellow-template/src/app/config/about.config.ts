@@ -1,10 +1,18 @@
 export const AboutConfig = {
-  subtitle: 'Welcome to Sleepy Hollow',
+  subtitle: 'VALLEI VAN STILTE MET DIE PRAGTIGSTE INHEEMSE BOS. LEKKER UITSPANPLEK!',
 
-  title: ' A Peaceful Escape Into Nature',
+  title: 'EXPLORE THE BEAUTY OF NATURE',
 
-  description:
-    'Whether you come here to picnic, to hike or for a overnight stay, its a wonderful "close to nature" experience.laxation.',
+  description: [
+    'Day visitors - R60 per adult and R40 per kid.',
+    'Hikers R30 / person.',
+    'Enough space for 20 caravans/tents with power points (3-point plug)',
+    'Ablution blocks for men and women (two toilets, two showers and basins each with hot water)',
+    'Small shop at Ann\'s house below the caravans (ice, cooldrinks, ice cream, etc.)',
+    'Braai-packs at Ann\'s house shop',
+    'Wi-Fi vouchers at Ann\'s house shop, R20/1Gig',
+    'Wood R50 per bag, arrange with Anton to collect'
+  ],
 
   secondaryButton: 'View Accommodation',
   imgUrl: 'images/camping.jpg',

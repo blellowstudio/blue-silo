@@ -11,18 +11,18 @@ export const AccommodationConfig = {
   cards: [
     {
       title: 'Caravan Park',
-      description: 'Fully functioning caravan park.',
+      description: '6 Permanent Carvavans.',
       imgUrl: 'images/caravan.jpg',
     },
     {
       title: 'Camping',
-      description: 'Hidden away in a beautiful valley.',
+      description: '9 campsites.',
       imgUrl: 'images/campsites.jpg',
     },
     {
-      title: 'Self Catering',
-      description: 'Self Catering cabins.',
-      imgUrl: 'images/campsites.jpg',
+      title: 'Teepee',
+      description: 'No electricity but solar lighting outside and inside tent.',
+      imgUrl: 'images/teepee.jpg',
     },
 
   ],

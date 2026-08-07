@@ -1,0 +1,34 @@
+<section class="booking" id="booking">
+  <div class="container">
+    <div class="section-header">
+      <span class="subtitle">{{ booking.subtitle }}</span>
+      <h2>{{ booking.title }}</h2>
+      <p>{{ booking.description }}</p>
+    </div>
+
+    <div class="booking-content">
+      <div class="booking-panel">
+        <h3>{{ booking.panelTitle }}</h3>
+        <p>{{ booking.panelDescription }}</p>
+
+        <div class="booking-items">
+          <div>
+            <h4>{{ booking.phoneLabel }}</h4>
+            <p>{{ booking.phone }}</p>
+          </div>
+          <div>
+            <h4>{{ booking.emailLabel }}</h4>
+            <p>{{ booking.email }}</p>
+          </div>
+        </div>
+
+        <a href="mailto:{{ booking.email }}" class="primary-btn">{{ booking.buttonText }}</a>
+      </div>
+
+      <div class="booking-form">
+        <h3>{{ booking.detailsTitle }}</h3>
+        <p>{{ booking.detailsDescription }}</p>
+      </div>
+    </div>
+  </div>
+</section>
