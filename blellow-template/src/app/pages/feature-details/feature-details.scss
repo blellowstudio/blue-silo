@@ -1,0 +1,148 @@
+.feature-details {
+  padding: 120px 0;
+  background: var(--light-grey);
+}
+
+.feature-details .container {
+  width: min(1200px, 95%);
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.details-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  min-height: 560px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-nav.prev {
+  left: 14px;
+}
+
+.carousel-nav.next {
+  right: 14px;
+}
+
+.carousel-thumbs {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1;
+}
+
+.carousel-thumbs button {
+  border: 2px solid transparent;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 60px;
+  height: 42px;
+  background: rgba(255,255,255,0.85);
+  cursor: pointer;
+}
+
+.carousel-thumbs button.active {
+  border-color: var(--secondary);
+}
+
+.carousel-thumbs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Keep generic card images from affecting thumbnail previews */
+.details-card > img,
+.details-card img:not(.carousel-thumbs img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details-content {
+  padding: 40px;
+}
+
+.details-content h1 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.details-content p {
+  line-height: 1.8;
+  margin: 24px 0;
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--secondary);
+  color: var(--white);
+  padding: 16px 38px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .details-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-details {
+    padding: 90px 20px;
+  }
+
+  .details-content {
+    padding: 24px;
+  }
+}

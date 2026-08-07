@@ -41,8 +41,8 @@
             {{ card.description }}
           </p>
 
-           <a href="#accommodation" class="primary-btn" >
-                {{ accommodation.accommodationButton  }}
+           <a [routerLink]="['/accommodation', card.id]" class="primary-btn">
+                {{ accommodation.accommodationButton }}
             </a>
 
         </div>

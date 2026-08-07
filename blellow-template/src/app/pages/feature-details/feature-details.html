@@ -1,0 +1,35 @@
+<section class="feature-details">
+  <div class="container">
+    <a class="back-link" href="#accommodation">← Back to Home</a>
+
+    <div class="details-card">
+      <div class="carousel">
+        <img [src]="card.images[currentImageIndex] || card.imgUrl" [alt]="card.title" />
+        <button class="carousel-nav prev" type="button" (click)="prevImage()">←</button>
+        <button class="carousel-nav next" type="button" (click)="nextImage()">→</button>
+        <div class="carousel-thumbs" *ngIf="card.images?.length > 1">
+          <button
+            *ngFor="let image of card.images; let i = index"
+            type="button"
+            [class.active]="currentImageIndex === i"
+            (click)="selectImage(i)">
+            <img [src]="image" [alt]="card.title + ' image ' + (i + 1)" />
+          </button>
+        </div>
+      </div>
+
+      <div class="details-content">
+        <h1>{{ card.title }}</h1>
+
+        <div class="details-paragraphs">
+          <p *ngFor="let paragraph of card.details">{{ paragraph }}</p>
+        </div>
+
+        <h2 class="checkin-title">{{ card.checkinHeading }}</h2>
+        <p class="checkin-details">{{ card.checkinDetails }}</p>
+
+        <a href="#booking" class="primary-btn">Make an Enquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
